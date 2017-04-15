@@ -1,0 +1,57 @@
+
+注册登录页面---------------------------
+
+zhuche.html     注册
+wj_mima.html    忘记密码
+login.html      登录界面-第三方登录
+bd_li1.html     绑定第一步
+bd_li2.html     绑定第二步
+bd_ok.html      绑定成功
+zc_xieyi.html   注册协议
+
+
+
+我的页面---------------------------
+
+wode.html        我的主页
+wode_jzr.html    我的就诊人管理
+wode_lishipinjia.html   我的历史评价
+wode_tiwen_lishi.html   我的历史提问
+wode_yuyue_lishi.html   我的历史预约
+wode_xingxiguanli.html  我的信息管理
+jia_jzr.html            新增就诊人
+gai_jzsj.html           修改就诊时间-成功
+
+
+
+消息页面---------------------------
+
+xiaoxi.html            消息中心
+yuyue_ok_xiaoxi.html   成都天使儿童医院
+ask_cj.html            常见问题
+
+
+
+疾病与资讯页面----------------------
+
+jibing_guodu.html      小儿发烧
+jibing_list.html       常见疾病
+jibing_wzy.html        小儿发烧文章页面
+wzy_yisheng.html       医生文章
+
+
+医生页面---------------------------
+
+fa_pingjia.html        发表评价
+wenti_list.html        患者问题列表
+wen_dao.html           医患问答
+tiwen.html             患者提问区
+pingjia_list.html      患者评价
+wz_video_list.html     文章与视频
+yisheng_list.html      医生列表
+yishengye.html         医生页
+guahao_time.html       预约挂号时间
+guahao_ok.html         预约挂号
+
+index.html 首页
+search.html 搜索
