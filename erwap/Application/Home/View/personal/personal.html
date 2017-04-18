@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+
+    <title>个人中心</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/wapcss.css" />
+    <script src="__PUBLIC__/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/size.js"></script>
+</head>
+<body>
+
+<!--我的-->
+
+<div class="wode_bgt1 container">
+    <div>
+        <ul  class="row">
+            <li class="col-xs-2"><a href="{:U('Home/Index/index')}" class="bakc_wode1"> < </a></li>
+            <li class="col-xs-8 wode_center1" >
+                <div class="col-xs-6 wode_toux1"><p><img src="__PUBLIC__/image/wode_tx1.png" class="wode_tx_wd"></p></div>
+                <div class="col-xs-6 wode_name1">
+                    <foreach name="user" item="v">
+                        <p class="wode_name2">{$v.user}</p>
+                        <p class="wode_tel1">{$v.phone}</p>
+                    </foreach>
+                </div>
+            </li>
+            <li class="col-xs-2"> </li>
+        </ul>
+    </div>
+</div>
+
+<div class="jianju_div"></div>
+
+
+<!---几块信息----->
+<div class="container" style="border-bottom:1px solid #efefef; padding-top: 0.4rem;">
+
+    <ul class="row wode_k1bgs2">
+        <li class="col-xs-2" style="text-align: right;"><p><img src="__PUBLIC__/image/w_01.jpg" class="wode_left_ico1"></p></li>
+        <li class="col-xs-8 wode_mg1"><a href="{:U('Home/UserAdmin/informationAdmin')}" class="wode_xxgl">我的信息管理 <span id="perfect">(请完善个人资料)</span></a></li>
+        <li class="col-xs-2"><p><img src="__PUBLIC__/image/w_jt.jpg"></p></li>
+    </ul>
+
+
+    <ul class="row wode_k1bgs2">
+        <li class="col-xs-2" style="text-align: right;"><p><img src="__PUBLIC__/image/w_02.jpg" class="wode_left_ico1"></p></li>
+        <li class="col-xs-8 wode_mg1"><a href="{:U('Home/UserAdmin/doctorAdmin')}" class="wode_xxgl">我的就诊人管理  </a></li>
+        <li class="col-xs-2"><p><img src="__PUBLIC__/image/w_jt.jpg"></p></li>
+    </ul>
+
+
+    <ul class="row wode_k1bgs2">
+        <li class="col-xs-2" style="text-align: right;"><p><img src="__PUBLIC__/image/w_03.jpg" class="wode_left_ico1"></p></li>
+        <li class="col-xs-8 wode_mg1"><a href="{:U('Home/UserAdmin/historicalReservation')}" class="wode_xxgl">我的历史预约  </a></li>
+        <li class="col-xs-2"><p><img src="__PUBLIC__/image/w_jt.jpg"></p></li>
+    </ul>
+
+
+    <ul class="row wode_k1bgs2">
+        <li class="col-xs-2" style="text-align: right;"><p><img src="__PUBLIC__/image/w_04.jpg" class="wode_left_ico1"></p></li>
+        <li class="col-xs-8 wode_mg1"><a href="" class="wode_xxgl">我的历史提问  </a></li>
+        <li class="col-xs-2"><p><img src="__PUBLIC__/image/w_jt.jpg"></p></li>
+    </ul>
+
+
+    <ul class="row wode_k1bgs2">
+        <li class="col-xs-2" style="text-align: right;"><p><img src="__PUBLIC__/image/w_05.jpg" class="wode_left_ico1"></p></li>
+        <li class="col-xs-8 wode_mg1"><a href="" class="wode_xxgl">我的历史评价  </a></li>
+        <li class="col-xs-2"><p><img src="__PUBLIC__/image/w_jt.jpg"></p></li>
+    </ul>
+
+
+
+    <div class="wode_tel_bgs"><a href="" ><img src="__PUBLIC__/image/w_tel1.jpg" class="wd_tel_size1"> 客服：400-6666666</a></div>
+
+
+
+</div>
+<!---几块信息 end----->
+
+<!--我的 end-->
+
+
+
+<!-------固定底部部件--------->
+<div style="height: 2.5rem;"></div>
+<!--<div class="container foot_bgs1 navbar-fixed-bottom">
+    <ul class="row">
+        <li class="col-xs-3"><a href=""><img src="img/f_ico1.png">  <p>挂号</p> </a></li>
+        <li class="col-xs-3"><a href=""><img src="img/f_ico2.png">  <p>寻医</p> </a></li>
+        <li class="col-xs-3"><a href=""><img src="img/f_ico3.png">  <p>消息</p> </a></li>
+        <li class="col-xs-3"><a href=""><img src="img/f_ico4.png">  <p>我的</p> </a></li>
+    </ul>
+</div>-->
+<include file="index/top"/>
+<!-------固定底部部件 end --------->
+
+
+
+</body>
+</html>

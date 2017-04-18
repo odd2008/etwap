@@ -26,12 +26,13 @@ textarea::-webkit-input-placeholder {
 .zc_name_input{ height: 1.4rem; line-height: 1.5rem; width: 98%; color:#dbdbdb ; font-size: 0.65rem;}
 .left_ico1{ text-align: right;}
 .huoquma_right{ text-align: right;}
-.huoquma1{ width: 90%; font-size: 0.5rem; text-align: center; height: 0.8rem; line-height: 0.8rem; color: #16a3cc ; border:1px solid #16a3cc ; border-radius: 50px; padding: 0.05rem 0.3rem; }
+.huoquma1{ width: 90%;cursor: pointer; font-size: 0.5rem; text-align: center; height: 0.8rem; line-height: 0.8rem; color: #16a3cc ; border:1px solid #16a3cc ; border-radius: 50px; padding: 0.05rem 0.3rem; }
 .yuedu_xieyi{ font-size: 0.5rem ; color: #999999;}
 .zc_btn1{ width: 60%; text-align: center; color: #ffffff; height: auto; font-size: 0.6rem; background-color: #16a3cc; border-radius: 50px; margin: 0.1rem auto 0.9rem auto; display: block; padding: 0.2rem 0 ;}
+.zc_btns{ width: 60%; text-align: center; color: #ffffff; height: auto; font-size: 0.6rem; background-color: #16a3cc; border-radius: 50px; margin: 0.1rem auto 0.9rem auto; display: block; padding: 0.2rem 0 ;}
 .jianju_div{ height: 0.3rem; margin: 0 auto;background-color: #f1f1f1; max-width: 640px;}
-.zc_chenggong_bgs{ background-color: #ffffff; max-width: 640px; height: auto; text-align:center; margin: 0 auto; padding: 0.8rem 0; border:1px solid #DCDCDC;}
-.zc_gou_size{width: 1.4rem; height: 1.4rem;}
+.zc_chenggong_bgs{width: 100%; background-color: #ffffff;max-width: 640px; height: 35%; text-align:center; position: absolute;top:30%; padding: 0.8rem 0; border:1px solid #DCDCDC; }
+.zc_gou_size{width: 1.4rem; height: 1.4rem;margin-top: 10%;}
 .zccg_size{ font-size: 0.5rem; text-align: center; color: #666666;}
 .back_sy{ background-color: #16a3cc; color: #ffffff; font-size: 0.5rem; border-radius: 50px;padding: 0.1rem 0.5rem; margin-top: 0.2rem;}
 .zcxy_zi p{ font-size: 0.6rem; width: 98%; margin: 0.9rem 0; color:#908e8e; line-height: 0.9rem;}
@@ -88,10 +89,15 @@ textarea::-webkit-input-placeholder {
 .xingm{ font-size: 0.65rem; color: #666666; font-weight: normal; text-align: right; margin: 0; padding: 0;}
 .jia_k2{line-height: 1.65rem; border-bottom:1px solid #eeeeee; width: auto;  padding-bottom: 0.4rem;}
 .jia_name_input{ font-size: 0.65rem; color: #dbdbdb; width: 98%; height: 1.55rem;}
+.gender{
+    font-size: 0.65rem; color: #dbdbdb; width: 98%; height: 1.55rem;
+}
 .xinbie_types{ font-size: 0.65rem; color: #dbdbdb;  }
 .show_hidden_code{ display: none;}
-.xg_btn1{ width: 80%; text-align: center; color: #ffffff; height: auto; font-size: 0.6rem; background-color: #52d7fd; border-radius: 50px; margin: 0.1rem auto 0.9rem auto; display: block; padding: 0.2rem 0 ;}
+.xg_btn1{ width: 80%; text-align: center; color: #ffffff; height: auto; font-size: 0.6rem; background-color: #52d7fd; border-radius: 50px; margin: 0.1rem auto 0.9rem 4.5rem; display: block; padding: 0.2rem 0 ;}
+/*
 .bc_btn1{ width: 80%; text-align: center; color: #ffffff; height: auto; font-size: 0.6rem; background-color: #fab163; border-radius: 50px; margin: 0.1rem auto 0.9rem auto; display: block; padding: 0.2rem 0 ;}
+*/
 .gai_jzr_wz1{ font-size: 0.6rem; color: #f49938;}
 .gai_jzr_size{ width: 0.55rem; height: 0.55rem; vertical-align: middle; margin-right: 0.2rem; margin-top: -0.15rem;}
 .gai_jztimes{ font-size: 0.45rem; color: #858585;}
@@ -447,9 +453,19 @@ textarea::-webkit-input-placeholder {
 
 
 
-
-
-
+/*后期*/
+#show{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.1);
+    position: fixed;
+    left: 0;
+    top:0;
+    display: none;
+}
+.patient_delete{
+    cursor: pointer;
+}
 
 
 

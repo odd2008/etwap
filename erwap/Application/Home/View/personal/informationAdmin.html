@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+
+    <title>我的信息管理</title>
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/wapcss.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/size.js"></script>-->
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/wapcss.css" />
+    <script src="__PUBLIC__/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/size.js"></script>
+
+</head>
+<body>
+<!--我的信息管理-->
+<div class="container zc_bgs1">
+    <ul class="row">
+        <li class="col-xs-2"><a href="{:U('/Home/UserAdmin/personal')}"><img src="__PUBLIC__/image/back_left1.png" class="back_left_img"></a></li>
+        <li class="col-xs-8"><span>我的信息管理</span></li>
+        <li class="col-xs-2"></li>
+    </ul>
+</div>
+
+<div class="jianju_div"></div>
+
+<div class="container zc_bgs2">
+
+    <div class="row zhu_ts">注： 带<span>*</span>为不能修改</div>
+
+
+    <!--表单--->
+    <foreach name="user" item="v">
+    <form class="form-horizontal" role="form">
+        <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">姓名 <span style="color: #f4a41f;">*</span></label>
+            <div class="col-xs-9">
+                <input type="text" class="jia_name_input" id="name" value="{$v.user}"/>
+<!--
+                <div class="jia_name_input">{$v.user}</div>
+                <input type="text" class="jia_name_input show_hidden_code" value="" placeholder="请输入就诊人的真实姓名">
+-->
+            </div>
+        </div>
+        <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">性别</label>
+            <div class="col-xs-9">
+                <if condition="$v['sex'] eq 0">
+                    <input  type="text" class="gender" value="男"/>
+                    <else/>
+                    <input  type="text" class="gender" value="女"/>
+                </if>
+
+            <!--    <input type="text" class="jia_name_input show_hidden_code" value='<if condition="$v['sex'] eq 0">男<else/>女</if>' placeholder="性别">-->
+
+            </div>
+        </div>
+        <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">年龄 </label>
+            <div class="col-xs-9">
+                <input class="jia_name_input" type="text" id="age" value="{$v.age}"/>
+               <!-- <input type="text" class="jia_name_input show_hidden_code" id="age" placeholder="请输入就诊人年龄">-->
+            </div>
+        </div>
+        <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">身份证号 </label>
+            <div class="col-xs-9">
+                <input type="text" value="{$v.name_id}" class="jia_name_input" id="name_id"/>
+            </div>
+        </div>
+        <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">手机号码 <span style="color: #f4a41f;">*</span></label>
+            <div class="col-xs-9">
+                <input class="jia_name_input" type="text" value="{$v.phone}" readonly="true"/>
+            </div>
+        </div>
+       <!-- <div class="form-group jia_k2"  >
+            <label class="col-xs-3   xingm" style="text-align: right;">籍贯 <span style="color: #f4a41f;">*</span></label>
+            <div class="col-xs-9">
+                <div class="jia_name_input">四川成都</div>
+                <input type="text" class="jia_name_input show_hidden_code" id="jiguan" placeholder="请输入户籍所在地">
+            </div>
+        </div>-->
+        <input type="hidden" id="u_id" value="{$v.id}"/>
+        <ul>
+            <li class="col-xs-6"><button type="button" class="xg_btn1" id="user_modify" modify_url="{:U('Home/UserAdmin/userModify')}">修改</button></li>
+<!--
+            <li class="col-xs-6"><button type="submit" class="bc_btn1" id="">保存</button></li>
+-->
+        </ul>
+    </form>
+    </foreach>
+    <!---表单 end-->
+
+</div>
+
+<!--我的信息管理 end-->
+
+<!-------固定底部部件--------->
+<div style="height: 2.5rem;"></div>
+<include file="index/top"/>
+<!-------固定底部部件 end --------->
+</body>
+</html>
+<script src="__PUBLIC__/js/chaohai/userAdmin.js"></script>
