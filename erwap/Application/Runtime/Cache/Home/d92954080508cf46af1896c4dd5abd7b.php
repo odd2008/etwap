@@ -1,0 +1,86 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+    <title>注册</title>
+    <link rel="stylesheet" href="/etwap/etwap/erwap/Public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/etwap/etwap/erwap/Public/bootstrap/css/wapcss.css" />
+    <script src="/etwap/etwap/erwap/Public/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="/etwap/etwap/erwap/Public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/etwap/etwap/erwap/Public/bootstrap/js/size.js"></script>
+</head>
+<body>
+<!--注册-->
+<div class="container zc_bgs1">
+    <ul class="row">
+        <li class="col-xs-2"><a href="<?php echo U('Home/Index/index');?>"><img src="/etwap/etwap/erwap/Public/image/back_left1.png" class="back_left_img"></a></li>
+        <li class="col-xs-8"><span>注册</span></li>
+        <li class="col-xs-2"></li>
+    </ul>
+</div>
+
+<div class="jianju_div"></div>
+
+<div class="container zc_bgs2">
+    <!--表单--->
+    <form class="form-horizontal">
+        <div class="form-group bk01" style="margin-top: 0.3rem;">
+            <label for="firstname" class="col-xs-2  left_ico1"><img src="/etwap/etwap/erwap/Public/image/ico1.jpg" ></label>
+            <div class="col-xs-10">
+                <input type="text" class="zc_name_input" id="name1" placeholder="请输入您的真实姓名">
+            </div>
+        </div>
+
+        <div class="form-group bk01">
+            <label for="firstname" class="col-xs-2  left_ico1"><img src="/etwap/etwap/erwap/Public/image/ico2.jpg" ></label>
+            <div class="col-xs-10">
+                <input type="text" class="zc_name_input" id="shouji1" placeholder="请输入您的手机号">
+            </div>
+        </div>
+
+
+        <div class="form-group bk01">
+            <label for="firstname" class="col-xs-2  left_ico1"><img src="/etwap/etwap/erwap/Public/image/ico3.jpg" ></label>
+            <div class="col-xs-6">
+                <input type="text" class="zc_name_input" id="yanzma1" name="yanzma1" placeholder="请输入短信验证码">
+            </div>
+            <div class="col-xs-4 huoquma_right" ><span class="huoquma1"  register_url='<?php echo U("Home/Register/verification");?>'>获取验证码</span></div>
+        </div>
+        <div class="form-group bk01">
+            <label for="firstname" class="col-xs-2  left_ico1"><img src="/etwap/etwap/erwap/Public/image/ico4.jpg" ></label>
+            <div class="col-xs-10">
+                <input type="password" class="zc_name_input" id="mima1" placeholder="请输入数字和字母的6-20位密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label style="width: 98%;">
+                    <div class="col-xs-11 col-xs-offset-1 yuedu_xieyi">
+                        <input type="checkbox" name="checkbox" id="mandatory" checked="checked">我已经阅读并同意<a href="<?php echo U('Home/Register/agreement');?>"> <br>《儿科统一预约挂号平台用户许可协议》</a>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <button class="zc_btn1" type="button" register_url1="<?php echo U('Home/Register/registerAdd');?>">注册</button>
+
+    </form>
+    <!---表单 end-->
+
+</div>
+
+<!--注册 end-->
+<!---------注册成功弹出消息----->
+<div style="" id="show">
+    <div class="zc_chenggong_bgs" >
+        <p><img src="/etwap/etwap/erwap/Public/image/zc_ico_gou.png" class="zc_gou_size"></p>
+        <p class="zccg_size">恭喜您！注册成功</p>
+        <p><a href="<?php echo U('Home/Index/index');?>" class="back_sy">返回首页</a></p>
+    </div>
+</div>
+<!---------注册成功弹出消息 end ----->
+</body>
+</html>
+<script src="/etwap/etwap/erwap/Public/js/chaohai/register.js"></script>

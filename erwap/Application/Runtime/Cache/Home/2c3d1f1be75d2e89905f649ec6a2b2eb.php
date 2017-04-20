@@ -13,6 +13,7 @@
     <script src="/etwap/etwap/erwap/Public/bootstrap/js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="/etwap/etwap/erwap/Public/bootstrap/js/bootstrap.min.js"></script>
     <script src="/etwap/etwap/erwap/Public/bootstrap/js/size.js"></script>
+    <script src="/etwap/etwap/erwap/Public//js/size.js"></script>
 </head>
 <body>
 
@@ -21,7 +22,16 @@
     <ul class="row">
         <li class="col-xs-2 sy_dizi" style="margin-left: 0.4rem;"><a href=""><img src="/etwap/etwap/erwap/Public/image/sy_add.png">成都｜</a></li>
         <li class="col-xs-7 sy_ghname"><p><img src="/etwap/etwap/erwap/Public/image/sy_logo.png"  style="vertical-align: middle; margin-top: -0.1rem;">儿童统一预约挂号平台</p></li>
-        <li class="col-xs-3 dl_mg1" style="margin-left: -0.7rem;"><p><a href="" class="dla1">登录</a> <a href="" class="zca1">注册</a></p></li>
+            <?php if($name != ''): ?><li class="col-xs-3 dl_mg1" style="margin-left: -0.7rem;">
+                        <p><span class="dla1"><?php echo ($name); ?></span></p>
+                    </li>
+            <?php else: ?>
+                <li class="col-xs-3 dl_mg1" style="margin-left: -0.7rem;">
+                    <p>
+                        <a href="<?php echo U('Home/Register/login');?>" class="dla1">登录</a>
+                        <a href="<?php echo U('Home/Register/register');?>" class="zca1">注册</a>
+                    </p>
+                </li><?php endif; ?>
     </ul>
 </div>
 <!---------top end ------->
@@ -122,7 +132,7 @@
 <div class="container">
     <ul class="row">
         <li class="col-xs-9"><p class="keshi_k1">推荐医生</p></li>
-        <li class="col-xs-3"><a href="" class="tjzj_more1">更多</a></li>
+        <li class="col-xs-3"><a href="<?php echo U('Home/Xunyi/doctor');?>" class="tjzj_more1">更多</a></li>
     </ul>
 
     <ul class="row tjzj_li1">
@@ -157,7 +167,7 @@
 <div class="container">
     <ul class="row">
         <li class="col-xs-9"><p class="keshi_k1">常见疾病</p></li>
-        <li class="col-xs-3"><a href="" class="tjzj_more1">更多</a></li>
+        <li class="col-xs-3"><a href="<?php echo U('Home/Disease/disease');?>" class="tjzj_more1">更多</a></li>
     </ul>
 
     <div class="row" style="margin-top: 0.8rem;">
@@ -232,13 +242,9 @@
                 <h3 class="zx_tit1"><a href="">空腹服药和饭前服药是一回事儿吗</a></h3>
                 <p class="zx_ms1">现在素食者越来越多，在转变成素食者后，一部分人发.......<a href="">【详细】</a></p>
                 <p class="jiedu_click2" ><span style="margin-right: 0.8rem;">2017.5.8</span><img src="/etwap/etwap/erwap/Public/image/zjjd02.jpg"><span>256</span></p>
-
             </div>
         </li>
-
-
     </ul>
-
 </div>
 <!--------最新资讯  end------>
 
@@ -259,10 +265,10 @@
 <body>
 <div class="container foot_bgs1 navbar-fixed-bottom">
     <ul class="row">
-        <li class="col-xs-3"><a href=""><img src="/etwap/etwap/erwap/Public/image/f_ico1.png">  <p>挂号</p> </a></li>
-        <li class="col-xs-3"><a href=""><img src="/etwap/etwap/erwap/Public/image/f_ico2.png">  <p>寻医</p> </a></li>
+        <li class="col-xs-3"><a href="<?php echo U('Home/Bespeak/bespeak');?>"><img src="/etwap/etwap/erwap/Public/image/f_ico1.png">  <p>挂号</p> </a></li>
+        <li class="col-xs-3"><a href="<?php echo U('Home/Xunyi/doctor');?>"><img src="/etwap/etwap/erwap/Public/image/f_ico2.png">  <p>寻医</p> </a></li>
         <li class="col-xs-3"><a href=""><img src="/etwap/etwap/erwap/Public/image/f_ico3.png">  <p>消息</p> </a></li>
-        <li class="col-xs-3"><a href=""><img src="/etwap/etwap/erwap/Public/image/f_ico4.png">  <p>我的</p> </a></li>
+        <li class="col-xs-3"><a href="<?php echo U('Home/UserAdmin/personal');?>"><img src="/etwap/etwap/erwap/Public/image/f_ico4.png">  <p>我的</p> </a></li>
     </ul>
 </div>
 </body>
@@ -270,3 +276,4 @@
 <!-------固定底部部件 end --------->
 </body>
 </html>
+<script src="/etwap/etwap/erwap/Public/js/chaohai/register.js"></script>
