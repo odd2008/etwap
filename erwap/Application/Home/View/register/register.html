@@ -16,7 +16,7 @@
 <!--注册-->
 <div class="container zc_bgs1">
     <ul class="row">
-        <li class="col-xs-2"><a href=""><img src="__PUBLIC__/image/back_left1.png" class="back_left_img"></a></li>
+        <li class="col-xs-2"><a href="{:U('Home/Index/index')}"><img src="__PUBLIC__/image/back_left1.png" class="back_left_img"></a></li>
         <li class="col-xs-8"><span>注册</span></li>
         <li class="col-xs-2"></li>
     </ul>
@@ -59,7 +59,7 @@
             <div class="checkbox">
                 <label style="width: 98%;">
                     <div class="col-xs-11 col-xs-offset-1 yuedu_xieyi">
-                        <input type="checkbox" name="checkbox" id="mandatory" >我已经阅读并同意<a href=""> <br>《儿科统一预约挂号平台用户许可协议》</a>
+                        <input type="checkbox" name="checkbox" id="mandatory" checked="checked">我已经阅读并同意<a href="{:U('Home/Register/agreement')}"> <br>《儿科统一预约挂号平台用户许可协议》</a>
                     </div>
                 </label>
             </div>
@@ -80,9 +80,7 @@
         <p><a href="{:U('Home/Index/index')}" class="back_sy">返回首页</a></p>
     </div>
 </div>
-
 <!---------注册成功弹出消息 end ----->
-
 </body>
 </html>
 <script src="__PUBLIC__/js/chaohai/register.js"></script>

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/wapcss.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/pages.css"/>
+<script src="__PUBLIC__/bootstrap/js/jquery-1.9.1.min.js"></script>
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/bootstrap/js/size.js"></script>
+<foreach name="doctor1" item="vh">
+    <div class="container ys_xbk1">
+        <ul class="row">
+            <li class="col-xs-4 ys_left_tx1"><a href="{:U('Home/Xunyi/details')}" class="doctor_details" d_id="{$v.id}" details_url="{:U('Home/Xunyi/doctorParameter')}"><img src="__PUBLIC__/image/ys_list_tx.jpg"></a></li>
+            <li class="col-xs-6 ys_zj_li">
+                <div class="ys_namezc">
+                    <p><a href="{:U('Home/Xunyi/details')}" class="doctor_details" d_id="{$vh.d_id}" details_url="{:U('Home/Xunyi/doctorParameter')}">{$vh.d_name} <span>{$vh.title}</span></a></p>
+                    <p>
+                        <span class="jzl01"><img src="__PUBLIC__/image/ys_list_jz.jpg">接诊量：33</span>
+                        <span class="pnigf_x"><img src="__PUBLIC__/image/ysx1.jpg"><img src="__PUBLIC__/image/ysx1.jpg"><img src="__PUBLIC__/image/ysx1.jpg"><img src="__PUBLIC__/image/ysx1.jpg"><img src="__PUBLIC__/image/ysx1.jpg"></span>
+                    </p>
+                    <p class="ys_sc3">擅长：{$vh.specialty}</p>
+                </div>
+            </li>
+            <li class="col-xs-2 ys_gh_btn1"><a href="">挂号</a></li>
+        </ul>
+    </div>
+    <!--<div class="flickr">{$doctors}</div>-->
+</foreach>
+<div class="pages">
+    <div class="flickr">
+        {$doctors}
+    </div>
+</div>

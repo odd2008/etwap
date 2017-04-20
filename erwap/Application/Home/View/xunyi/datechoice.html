@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+
+    <title>预约挂号时间</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/wapcss.css" />
+    <link rel="stylesheet" href="__PUBLIC__/css/pages.css"/>
+    <script src="__PUBLIC__/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/size.js"></script>
+
+
+</head>
+<body>
+<!--预约挂号时间-->
+<div class="container zc_bgs1">
+    <ul class="row">
+        <li class="col-xs-2"><a href="{:U('Home/Xunyi/doctor')}"><img src="__PUBLIC__/image/back_left1.png" class="back_left_img"></a></li>
+        <li class="col-xs-8"><span>预约挂号时间</span></li>
+        <li class="col-xs-2"></li>
+    </ul>
+</div>
+<div class="jianju_div"></div>
+<div class="container zc_bgs2">
+    <foreach name="doctor" item="v">
+    <div class="row guahao_keshi1">
+        <h3 class="col-xs-12">{$v.ks_name}</h3>
+    </div>
+    </foreach>
+    <foreach name="docs" item="vo">
+        <div>
+            <ul class="row guahao_time6">
+                <li class="col-xs-9">
+                    <p class="guahao_date1">2017-4-4 <span>(周一上午)</span></p>
+                    <p class="guahao_money2">专家门诊 <span>20.00</span>元</p>
+                </li>
+                <li class="col-xs-3 gh_yybtn2"><a href="">预约</a></li>
+            </ul>
+        </div>
+    </foreach>
+    <div class="row">
+        <p class="col-xs-12 gh_beiz">备注：突发原因导致门诊时间、出诊地点、门诊类型（普通、专家或特需门诊）、挂号费用的改变，请以医院当日公布为准，或拨打医院电话确认：028-67899999(咨询)，挂号费由医院自行设定，平台不收取任何额外费用。</p>
+    </div>
+    <div class="row">
+        <p class="col-xs-12 gh_guiz">医院平台预约规则</p>
+        <p class="col-xs-12 gh_beiz" style="margin-top: -0.1rem;">已支付挂号费的用户请提前30分钟到医院凭预约短信到医院一楼大厅自助预约机上取号，或向导医台核对信息，就诊，过时未取号将作废，爽约或迟到费用不退换，请就诊者悉知。</p>
+        <p class="col-xs-12 gh_beiz2">1.可预约班次更新时间：每日14:00左右更新。
+        </p>
+        <p class="col-xs-12 gh_beiz2">2.预约周期为1-30天，看不同科室，需要分别挂号。
+        </p>
+        <p class="col-xs-12 gh_beiz2">3.你有2次修改预约就诊日期的机会。
+        </p>
+    </div>
+</div>
+<!--预约挂号时间 end-->
+<!-------固定底部部件--------->
+<div style="height: 2.5rem;"></div>
+<include file="index/top"/>
+<!-------固定底部部件 end --------->
+
+
+</body>
+</html>

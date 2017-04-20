@@ -17,7 +17,7 @@
 <!--我的历史预约-->
 <div class="container zc_bgs1">
     <ul class="row">
-        <li class="col-xs-2"><a href=""><img src="img/back_left1.png" class="back_left_img"></a></li>
+        <li class="col-xs-2"><a href="{:U('Home/UserAdmin/personal')}"><img src="__PUBLIC__/image/back_left1.png" class="back_left_img"></a></li>
         <li class="col-xs-8"><span>我的历史预约</span></li>
         <li class="col-xs-2"></li>
     </ul>
@@ -31,43 +31,20 @@
         <li class="col-xs-2">预约状态</li>
         <li class="col-xs-3">备注</li>
     </ul>
-    <ul class="row yuyue_date1">
-        <li class="col-xs-2"><p>露露</p></li>
-        <li class="col-xs-3">
-            <p style="line-height: 0.9rem; margin-top: 0.05rem;"><a href="" style="color: #999999;">儿童保健科</a></p>
-            <p style="line-height: 0.9rem;"><a href="">李明 主任医师</a></p>
-            <p style="color: #dbdbdb;line-height: 0.9rem;">2017-4-5</p>
-        </li>
-        <li class="col-xs-2"><p>支付宝</p></li>
-        <li class="col-xs-2"><p>未到院</p></li>
-        <li class="col-xs-3"><a href="" class="gai_jztime2" style="color: #FFFFFF;">修改时间</a></li>
-    </ul>
-    <ul class="row yuyue_date1">
-        <li class="col-xs-2"><p>小王</p></li>
-        <li class="col-xs-3">
-            <p style="line-height: 0.9rem; margin-top: 0.05rem;"><a href="" style="color: #999999;">儿童保健科</a></p>
-            <p style="line-height: 0.9rem;"><a href="">张渝 门诊主任</a></p>
-            <p style="color: #dbdbdb;line-height: 0.9rem;">2017-4-5</p>
-        </li>
-        <li class="col-xs-2"><p>支付宝</p></li>
-        <li class="col-xs-2"><p>未到院</p></li>
-        <li class="col-xs-3"><a href="" class="gai_jztime2" style="color: #FFFFFF;">修改时间</a></li>
-    </ul>
-
-    <ul class="row yuyue_date1">
-        <li class="col-xs-2"><p>张明</p></li>
-        <li class="col-xs-3">
-            <p style="line-height: 0.9rem; margin-top: 0.05rem;"><a href="" style="color: #999999;">儿童保健科</a></p>
-            <p style="line-height: 0.9rem;"><a href="">李明 主任医师</a></p>
-            <p style="color: #dbdbdb;line-height: 0.9rem;">2017-4-5</p>
-        </li>
-        <li class="col-xs-2"><p>支付宝</p></li>
-        <li class="col-xs-2"><p>已到院</p></li>
-        <li class="col-xs-3"><a href="" class="gai_jztime2" style="color: #FFFFFF; display: none;">修改时间</a></li>
-    </ul>
-
+    <foreach name="patient" item="v">
+        <ul class="row yuyue_date1">
+            <li class="col-xs-2"><p>{$v.p_name}</p></li>
+            <li class="col-xs-3">
+                <p style="line-height: 0.9rem; margin-top: 0.05rem;"><a href="" style="color: #999999;">儿童保健科</a></p>
+                <p style="line-height: 0.9rem;"><a href="">{$v.d_name}</a></p>
+                <p style="color: #dbdbdb;line-height: 0.9rem;">{$v.r_date}</p>
+            </li>
+            <li class="col-xs-2"><p>支付宝</p></li>
+            <li class="col-xs-2"><p>未到院</p></li>
+            <li class="col-xs-3"><span  class="gai_jztime2" date_url1="{:U('Home/UserAdmin/patientModifyQuery')}" date_url="{:U('Home/UserAdmin/patientModifyDate')}" style="color: #FFFFFF;cursor: pointer;" modify_id="{$v.r_id}">修改时间</span></li>
+        </ul>
+    </foreach>
 </div>
-
 <!--我的历史预约 end-->
 <!-------固定底部部件--------->
 <div style="height: 2.5rem;"></div>
@@ -76,3 +53,6 @@
 </body>
 </html>
 <script src="__PUBLIC__/js/chaohai/userAdmin.js"></script>
+<script>
+
+</script>

@@ -1,0 +1,305 @@
+[ 2017-04-20T09:00:11+08:00 ] ::1 /etwap/etwap/erwap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:15+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Xunyi/doctor.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `ts_doc` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_doc` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ts_doc` left join ts_dtitle ON ts_doc.dtitle_id=ts_dtitle.id left join ts_ks ON ts_doc.ks_id=ts_ks.id  LIMIT 0,5   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ts_ks` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ts_ks`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_dtitle` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ts_dtitle`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:16+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Xunyi/conditionShow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: d_id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 69 行.
+NOTIC: [8] Undefined index: k_id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `ts_doc` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: doctor1 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Runtime\Cache\Home\d9483bf65d6ef82428cef7643f078640.php 第 7 行.
+NOTIC: [8] Undefined variable: doctors D:\phpStudy\WWW\etwap\etwap\erwap\Application\Runtime\Cache\Home\d9483bf65d6ef82428cef7643f078640.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:18+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-20T09:00:19+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:23+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/UserAdmin/personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\UserAdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-20T09:00:54+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:56+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Xunyi/doctor.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `ts_doc` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_doc` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ts_doc` left join ts_dtitle ON ts_doc.dtitle_id=ts_dtitle.id left join ts_ks ON ts_doc.ks_id=ts_ks.id  LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_ks` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_ks`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_dtitle` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dtitle`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-20T09:00:56+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Xunyi/conditionShow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: d_id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 69 行.
+NOTIC: [8] Undefined index: k_id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `ts_doc` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\XunyiController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: doctor1 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Runtime\Cache\Home\d9483bf65d6ef82428cef7643f078640.php 第 7 行.
+NOTIC: [8] Undefined variable: doctors D:\phpStudy\WWW\etwap\etwap\erwap\Application\Runtime\Cache\Home\d9483bf65d6ef82428cef7643f078640.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:57+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-20T09:00:59+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Disease/disease.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-20T09:01:01+08:00 ] ::1 /etwap/etwap/erwap/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\etwap\etwap\erwap\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `ts_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ts_user` WHERE `id` = null  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\etwap\etwap\erwap\Application\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

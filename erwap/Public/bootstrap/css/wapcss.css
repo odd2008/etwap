@@ -6,7 +6,7 @@ select,option{font-size: 100%; border: none;-webkit-border:none; -o-border:none;
 img{ vertical-align: middle;   border: none; max-width: 100%;}
 a,a:hover{ text-decoration: none;}
 ul li{ list-style: none;}
-
+html{font-size: 50px;}
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
     color: #dbdbdb;
@@ -468,10 +468,14 @@ textarea::-webkit-input-placeholder {
 }
 
 
+.bdsharebuttonbox{
+    max-width:640px; margin: 0 auto; border-right: 1px solid #efefef; border-left: 1px solid #efefef;
+}
 
-
-
-
+.keshi_bz_k1>.kesNav>a{
+    background:#16a3cc;
+    color: white;
+}
 
 
 

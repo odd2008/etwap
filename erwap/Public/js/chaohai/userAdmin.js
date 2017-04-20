@@ -3,6 +3,7 @@
  * 个人管理中心
  * 朝海
  */
+
 $(document).ready(function(){
     /*用户对帐号资料的修改*/
    $('#user_modify').click(function(){
@@ -67,7 +68,12 @@ $(document).ready(function(){
             }
         });
     });
-
+    $('#name_id').focus(function(){
+        var name_id=$('#name_id').val();
+       if(name_id!=''){
+           name_id.css("readOnly",'true');
+       }
+    });
     /*预约患者的输入判断*/
     $('#p_name').blur(function(){
         var p_name=$('#p_name').val();
@@ -77,7 +83,6 @@ $(document).ready(function(){
 
         }
     });
-
     $('#p_age').blur(function(){
         var p_age=$('#p_age').val();
         if(p_age==null||p_age==''||p_age==' '){
@@ -132,6 +137,53 @@ $(document).ready(function(){
         })
 
     });
+    /*用户对就诊人的就诊时间修改*/
+    $('.gai_jztime2').click(function(){
+        var date_url=$(this).attr('date_url');
+        var modify_id=$(this).attr('modify_id');
+        var date_url1=$(this).attr('date_url1');
+        window.location.href=date_url;
+        $.ajax({
+            url:date_url1,
+            type:'post',
+            data:{
+                modify_id:modify_id,
+            },
+            success:function(response){
 
+            }
+        })
+    });
+    /*用户对就诊人就诊时间的修改*/
+    $('#modify_preservation').click(function(){
+        var date=$('#date').val();
+        var r_id=$('.r_id').val();
+        var url=$(this).attr('url');
+        var frequency=1;
+        if(date==null||date==''||date==' '){
+            alert('时间不能为空');
+            return false;
+        }
+        $.ajax({
+            url:url,
+            type:'post',
+            data:{
+                date:date,
+                r_id:r_id,
+                frequency:frequency,
+            },
+            success:function(response){
+                if(response=='3'){
+                    alert('只能修改两次');
+                }
+                if(response=='1'){
+                    alert('修改成功');
+                }
+                if(response=="2"){
+                    alert('修改失败');
+                }
+            }
+        })
+    });
 
 });

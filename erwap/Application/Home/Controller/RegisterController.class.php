@@ -7,7 +7,6 @@
  * 朝海
  * 用户注册和登陆
  */
-
 namespace Home\Controller;
 use Think\Controller;
 class RegisterController extends Controller
@@ -15,6 +14,10 @@ class RegisterController extends Controller
     /*注册链接*/
     public function register(){
         $this->display('register/register');
+    }
+    /*注册协议链接*/
+    public function agreement(){
+        $this->display('register/agreement');
     }
     //手机验证码
     public function verification(){
@@ -56,7 +59,7 @@ class RegisterController extends Controller
             return false;
         }
          $arr=array(
-                'user'=>$name1,
+                'name'=>$name1,
                 'pwd'=>md5($mima1),
                 'phone'=>$shouji1,
          );
@@ -80,7 +83,6 @@ class RegisterController extends Controller
         $pwd=I('post.pwd');
         $user=M('user');
         $password=$user->where(array('phone'=>$tel))->select();
-
         if(md5($pwd)!=$password[0]['pwd']){
             echo 1;
             return false;
@@ -89,6 +91,7 @@ class RegisterController extends Controller
             $_SESSION['id']=$password[0]['id'];
             return false;
         }
+
     }
     /**
      * 将字符串转换为可以进行json_decode的格式
@@ -172,6 +175,47 @@ class RegisterController extends Controller
             echo "window.location.href='$url'";
             echo "</script>";
             exit;
+        }
+    }
+    /*用户退出*/
+    public function out(){
+        unset($_POST['name']);
+        $_SESSION = array(); //清除SESSION值.
+        if(isset($_COOKIE[session_name()])){  //判断客户端的cookie文件是否存在,存在的话将其设置为过期.
+            setcookie(session_name(),'',time()-1,'/');
+        }
+        session_destroy();  //清除服务器的sesion文件
+        $this->redirect('Index/index');
+    }
+    /*密码重置*/
+    public function reset(){
+        $this->display('register/reset');
+    }
+    /*修改密码*/
+    public function modifyPassword(){
+        $shouji1=I('post.shouji1');
+        $new_mima=I('post.new_mima');
+        if(empty($shouji1)){
+            echo 1;
+            return false;
+        }
+        if(empty($new_mima)){
+            echo 2;
+            return false;
+        }
+        $tel="/^1[34578]\d{9}$/";
+        if(!preg_match($tel,$shouji1)){
+            echo 3;
+            return false;
+        }
+        $user=M('user');
+        $modify=$user->where(array('phone'=>$shouji1))->save(array('pwd'=>md5($new_mima)));
+        if($modify){
+            echo 4;
+            return false;
+        }else{
+            echo 6;
+            return false;
         }
     }
 }

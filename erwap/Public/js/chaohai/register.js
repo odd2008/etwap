@@ -4,6 +4,11 @@
  * 注册
  */
 $(document).ready(function(){
+    /*登陆之后的退出*/
+    $('#out').click(function(){
+
+    });
+
     /*短信验证码*/
     $('.huoquma1').click(function(){
        var shouji1=$('#shouji1').val();
@@ -48,7 +53,7 @@ $(document).ready(function(){
         /*短信验证码的判断*/
         var rPhone  = $('#yanzma1').val();
 
-       $.ajax({
+        $.ajax({
             type: "POST", //用POST方式传输
             dataType: "json", //数据格式:JSON
             url: 'receiptPhone', //目标地址
@@ -57,7 +62,6 @@ $(document).ready(function(){
             success: function (msg){
                 var state=msg.state;//返回状态
                 if(state=='0'){
-
                 }else{
                     alert('验证码不正确');
                     return false;
